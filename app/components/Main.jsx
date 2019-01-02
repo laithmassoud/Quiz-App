@@ -83,12 +83,12 @@ class Main extends React.Component {
                 <div className="row">
                     <div className="col-lg-10 col-lg-offset-1">
                         <div id="question">
-                            <h4>Question {nr}/{total}</h4>
+                            <h4>Frage {nr}/{total}</h4>
                             <p>{question}</p>
                         </div>
                         <Answers answers={answers} correct={correct} showButton={this.handleShowButton} isAnswered={questionAnswered} increaseScore={this.handleIncreaseScore}/>
                         <div id="submit">
-                            {showButton ? <button className="fancy-btn" onClick={this.nextQuestion} >{nr===total ? 'Finish quiz' : 'Next question'}</button> : null}
+                            {showButton ? <button className="fancy-btn" onClick={this.nextQuestion} >{nr===total ? 'Quiz beenden' : 'Nextnächste Frage'}</button> : null}
                         </div>
                     </div>
                 </div>

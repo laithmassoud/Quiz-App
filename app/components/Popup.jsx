@@ -6,9 +6,9 @@ class Popup extends React.Component {
         
         this.state = {
             time: 'start',
-            title: 'Welcome to Quizz',
-            text: 'This is a quiz for Promos' ,
-            buttonText: 'Start the quiz' 
+            title: 'herzlich willkommen zu unser App',
+            text: 'Promos Quizz' ,
+            buttonText: 'Start quiz' 
         };
         
         this.popupHandle = this.popupHandle.bind(this);
@@ -20,7 +20,7 @@ class Popup extends React.Component {
         if(time === 'start'){
             this.setState({
                 time: 'end',
-                title: 'Congratulations!',
+                title: 'Herzliche Glückwünsche!',
                 buttonText: 'Restart'
             });
             
